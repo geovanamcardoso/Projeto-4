@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:#f4f4f4;
+}
+header{
+    background:#fff;
+    color:#333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow: 5px 5px 5px #555;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+header nav ul li a:hover{
+    color: purple;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+header #logo{
+    color: blue;
+}
+
+.banner #image{
+    width: 100%;
+    height: 100vh;
+    /**Vai ocupar todo o espaço que tiver*/
+    object-fit: cover;
+}
