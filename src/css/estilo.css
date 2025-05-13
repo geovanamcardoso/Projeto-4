@@ -151,4 +151,16 @@ header #logo{
     background-color: #1e7e34;
 }
 
+/* Localização */
+
+#mapaid{
+    width: 1000px;
+    height:600px;
+    border-radius: 50%;
+    margin-left: 200px;
+}
+#localizacao{
+    margin-top: 20px;
+    font-weight: 600;
+}
 

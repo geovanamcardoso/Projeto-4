@@ -6,10 +6,12 @@
 
     <link rel="stylesheet" href="../css/estilo.css">
 
-    <title>Quiz</title>
+     <!-- CHAMANDO O CSS DA API -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"crossorigin=""/>
+
+    <title>Localiza</title>
     
 </head>
-
 <body>
 
     <header>
@@ -27,32 +29,20 @@
         </nav>
     </header>
 
-    <main id="container-quiz">
-        <div class="quiz">
-
-            <h1>Aprenda Programação</h1>
-
-            <section id="container-perguntas">
-
-                <h2 id="pergunta"></h2>
-
-                <div id="container-respostas">
-                <input type="text" id="resposta" placeholder="Digite sua resposta:">
-                </div>
-
-                <button id="proximo">Próxima pergunta</button>
-                <p id="message"></p>
+    <main>
+        <div id="localiza">
+            <h1>Mapa de Localização</h1>
+            <section id="mapa-container">
+                <div id="mapaid"></div>
+                <div id="localizacao">Clique para ver a localização</div>
             </section>
-
-            <section id="container-resultado" class="hidden">
-                <h2>Resultado do Quiz</h2>
-                <ul id="lista-resultado"></ul>
-                <button id="inicio-btn">Reiniciar</button>
-            </section>
-
         </div>
-
     </main>
-    <script src="../js/quiz.js"></script>
+
+    
+    <!-- CHAMANDO JAVASCRIPT DA API -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"crossorigin=""></script>
+    <!--Chamando o JavaScript-->
+    <script src="../js/localiza.js"></script>
 </body>
 </html>
